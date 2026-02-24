@@ -8,7 +8,6 @@ This is a dotfiles repository. When asked to apply or install these dotfiles, fo
 |--------|--------|-------------|
 | `.gitignore` | `~/.gitignore` | Global gitignore (macOS, VSCode) |
 | `.claude/CLAUDE.md` | `~/.claude/CLAUDE.md` | Claude Code global instructions |
-| `claude-statusline/` | `~/.claude/` | Go-based status line (model, context, git branch, session time) |
 
 ## Installation Steps
 
@@ -22,23 +21,6 @@ This is a dotfiles repository. When asked to apply or install these dotfiles, fo
    ```bash
    ln -sf .claude/CLAUDE.md ~/.claude/CLAUDE.md
    ```
-
-3. **Claude Statusline**: Run the install script
-   ```bash
-   cd claude-statusline && ./install.sh
-   ```
-   This will:
-   - Copy and compile `statusline.go` to `~/.claude/statusline-go`
-   - Copy `claude-stats.sh` to `~/.claude/`
-   - Create required directories
-   - Update `~/.claude/settings.json` with statusLine config
-
-## Prerequisites
-
-- Go 1.19+ and `jq` are required
-  ```bash
-  brew install go jq  # macOS
-  ```
 
 ## Notes
 
